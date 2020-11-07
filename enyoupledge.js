@@ -150,7 +150,7 @@ var forFinal=0;
 	$("#btn2").css("display","none");
 	$("#btn3").css("display","block");
 	$("#btn4").css("display","block");	
-	$("c").css("display","block");
+	$("h1").css("display","block");
 	$("#answer").css("padding-bottom","0px");
 	$("#text1").text("엔유 공약");
 	$("#text2").text("유형 테스트 결과");
@@ -161,8 +161,4 @@ var forFinal=0;
 	//	location.replace('eny	ouresult.html');
 }
 
-
-
-
 });
-
