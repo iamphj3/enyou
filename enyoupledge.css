@@ -109,7 +109,10 @@ a {
 .answer .btn1, .btn2 { 
    background-color: #732379;
 }
-
+#answer #btn3, #btn4 {
+   display: none; 
+   background-color: #732379;
+}
 footer { 
    font-size: 20px;
    text-align: center; 
