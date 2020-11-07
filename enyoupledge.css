@@ -174,3 +174,13 @@ padding-bottom: 30px;}
    text-align: center;
    margin: 5px auto 0 auto;
 }
+c {	
+    font-family: 'Jua', sans-serif;
+    font-size: 16px;
+    background-color: #732379;
+    text-align: center;	
+    margin: 0 auto;
+    padding: 10px 0px 20px 0px;
+    color: white;
+    display: none;
+}
