@@ -9,7 +9,7 @@ html{
 
 body { 
    margin: 0 auto;
-   width : 400px;
+   width : 410px;
    background-color: #732379;
 }
 a {
@@ -65,12 +65,12 @@ a {
    background-color: #f5e6fd;
 }
 #answer {
-   padding: 25px;
+   padding: 25px 0px;
    text-align: center;
    background-color: #732379;
 }
 #answer button { 
-   width: 370px;
+   width: 360px;
    font-size: 25px; 
    border : 3px solid black;
    border-radius: 1em;
