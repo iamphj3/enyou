@@ -32,9 +32,6 @@ $("#no").text(neg[count]);
 
 
 $("#yes").click(function () {
-	if(count==6){
-	ff=1;
-	final();return;}
 	switch(count){
 		case 0: array[1]+=1; break;
 		case 1: array[8]+=3; array[0]+=1; break;
@@ -44,15 +41,15 @@ $("#yes").click(function () {
 		case 5: array[3]+=1; break;
 	}
 	count++;
+	if(count==6){
+	ff=1;
+	final();return;}
 	$("#post").text(question[count]);
 	$("#yes").text(pos[count]);
 	$("#no").text(neg[count]);
 });
 
 $("#no").click(function () {
-	if(count==6){
-	ff=1;
-	final();return;}
 	switch(count){
 		case 0: array[0]+=1; array[6]+=1; break;
 		case 1: array[6]+=1; array[7]+=1; break;
@@ -62,6 +59,9 @@ $("#no").click(function () {
 		case 5: array[6]+=2; break;
 	}
 	count++;
+	if(count==6){
+	ff=1;
+	final();return;}
 	$("#post").text(question[count]);
 	$("#yes").text(pos[count]);
 	$("#no").text(neg[count]);});}
@@ -94,9 +94,9 @@ var timer;
 var forFinal=0;
 //yes,no에서 count가 6이면 호출할 함수
  function final() {
+ 	document.getElementById("img").src = "banner2.jpg";
  	document.getElementById("all").style.display = "none";
  	document.getElementById("gif").style.display = "block";
- 	document.getElementById("img").src = "banner2.jpg";
  	document.getElementById("banner").style.backgroundColor="#ffffff";
  	document.getElementById("a").style.backgroundColor="#ffffff";
  	 	//$("header").backgroundColor="white";
