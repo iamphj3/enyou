@@ -11,15 +11,15 @@ var array=[0,0,0,0,0,0,0,0,0];
  "4. 학우님에게 더 익숙한 일감호 풍경은?",
  "5. 매학기마다 새로 사야하는 전공책들...다음 중 더 싫은 것은?",
  "6. 좋아하는 스포츠 경기의 결승전! 어떻게 보는 것을 좋아하시나요?"];
- var pos=["집에서 뒹굴거린다",
-"관심분야 동아리 활동!",
-"만나지 못한 동기와 선배들, 경험하지 못한 대학생활",
-"쨍쨍한 햇빛 받으며 수업들으러 가며 보는 일감호",
+ var pos=["뭐니뭐니해도 집이 최고! 방 안에서 뒹굴뒹굴거린다",
+"관심 있는 분야, 혹은 취미생활을 즐기기 위한 동아리 활동!",
+"만나보지도 못한 동기와 선배들, 경험하지 못한 새내기 대학생활",
+"쨍쨍한 햇빛 받으며 수업 들으러 가며 보는 일감호",
 "한학기 쓰고 버릴건데 너무 비싸!! 아까운 내 돈...",
 "가족들과 혹은 혼자 집에서 편하게 시청한다."];
 
- var neg=["밖에 나가서 논다",
-"공대의 다양한 행사!",
+ var neg=["이런 날 활동적인 걸 해야지! 밖에 나가서 친구들과 논다",
+"공대생들만을 위한 각종 이벤트, 공모전 등 공대의 다양한 행사!",
 "영화관, 콘서트 등 마음껏 즐기지 못한 문화생활",
 "퇴근 후 무거운 몸을 이끌고 가며 보는 운치 있는 일감호",
 "책 사러 갈 시간도 없고 사러 나가기 너무 귀찮아!",
@@ -33,11 +33,11 @@ $("#no").text(neg[count]);
 
 $("#yes").click(function () {
 	switch(count){
-		case 0: array[1]+=1; break;
-		case 1: array[8]+=3; array[0]+=1; break;
+		case 0: array[1]+=2; array[3]+=3; break;
+		case 1: array[8]+=3.5; break;
 		case 2: array[0]+=2; break;
 		case 3: break;
-		case 4: array[2]+=2; break;
+		case 4: array[2]+=3; break;
 		case 5: array[3]+=1; break;
 	}
 	count++;
@@ -52,10 +52,10 @@ $("#yes").click(function () {
 $("#no").click(function () {
 	switch(count){
 		case 0: array[0]+=1; array[6]+=1; break;
-		case 1: array[6]+=1; array[7]+=1; break;
-		case 2: array[1]+=2; break;
-		case 3: array[4]+=2; array[5]+=2; array[0]-=1;break;
-		case 4: array[5]+=2; array[4]+=1; break;
+		case 1: array[6]+=1; array[7]+=3.1; break;
+		case 2: array[1]+=1; break;
+		case 3: array[4]+=3; array[5]+=3; array[0]-=1;break;
+		case 4: array[5]+=3; break;
 		case 5: array[6]+=2; break;
 	}
 	count++;
@@ -120,7 +120,7 @@ var forFinal=0;
 //	$("#text1").attr(display,"block");
 //	$("#text2").attr(display,"block");
  	var max=0,index=0;
- 	for(var i=0;i<5;i++){
+ 	for(var i=0;i<9;i++){
  		if(array[i]>max){
  			max=array[i];
  			index=i;}
