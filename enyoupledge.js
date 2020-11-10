@@ -33,12 +33,12 @@ $("#no").text(neg[count]);
 
 $("#yes").click(function () {
 	switch(count){
-		case 0: array[1]+=2; array[3]+=3; break;
+		case 0: array[1]+=2; array[3]+=3.5; break;
 		case 1: array[8]+=3.5; break;
-		case 2: array[0]+=2; break;
+		case 2: array[0]+=3; break;
 		case 3: break;
-		case 4: array[2]+=3; break;
-		case 5: array[3]+=1; break;
+		case 4: array[2]+=3.5; break;
+		case 5:  break;
 	}
 	count++;
 	if(count==6){
@@ -53,8 +53,8 @@ $("#no").click(function () {
 	switch(count){
 		case 0: array[0]+=1; array[6]+=1; break;
 		case 1: array[6]+=1; array[7]+=3.1; break;
-		case 2: array[1]+=1; break;
-		case 3: array[4]+=3; array[5]+=3; array[0]-=1;break;
+		case 2: array[1]+=1.5; break;
+		case 3: array[4]+=4; array[5]+=3; array[0]-=1;break;
 		case 4: array[5]+=3; break;
 		case 5: array[6]+=2; break;
 	}
