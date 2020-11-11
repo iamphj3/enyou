@@ -106,7 +106,7 @@ var forFinal=0;
  	document.getElementById("all").style.display = "block";
  	document.getElementById("gif").style.display = "none";
  	document.getElementById("img").src = "banner2.png";
- 	document.getElementById("banner").style.backgroundColor = "#732379";
+ 	document.getElementById("banner").style.backgroundColor = "#90268f";
  	},3000)  // 5초후 go() 함수를 호출한다
 
  	document.getElementById("img").style.width = "300px";
